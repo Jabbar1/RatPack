@@ -11,6 +11,7 @@ public class RatPackApplication {
         RatpackServer.start(serverSpec -> serverSpec
                 .handlers(chain -> chain
                         .get(ctx -> ctx.render("Hello, World!"))
+
                 )
         );
     }
